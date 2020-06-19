@@ -1,0 +1,29 @@
+{{!-- <h1>Steam Game Statistics</h1> --}}
+<form data-component="search-form">
+    <div class="row flex">
+        <div class="ten columns">
+            <textarea class="u-full-width narrow" type="number" placeholder="Enter Steam title ID" id="steamId"></textarea>
+        </div>
+        <div class="two columns">
+            <input class="button-primary" type="submit" value="Submit">
+        </div>
+    </div>
+    <p>Find a list of steam ideas <a href="https://steamdb.info/apps/">here</a></p>
+</form>
+<hr />
+<section>
+    <h3 class="text-center"> {{ gameName }} </h3>
+    {{#each availableGameStats.achievements}}
+	    <div class="card">
+            <img src="{{icon}}" />
+            <div class="card__text-content">
+                <h5 class="card__title">
+                    {{displayName}}
+                </h5>
+                <div class="card__desc">
+                    {{description}}
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</section>

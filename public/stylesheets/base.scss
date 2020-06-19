@@ -1,0 +1,53 @@
+body {
+    background-color: #151515;
+    color: #f5fffa;
+}
+
+section.container {
+    margin-top: 4em;
+}
+
+.flex {
+    display: flex;
+}
+
+.text-center {
+    text-align: center;
+}
+
+textarea.narrow {
+    margin-bottom: 0;
+    min-height: 38px;
+    color: #222222;
+}
+
+input.button-secondary {
+    background-color: #f5fffa;
+}
+
+.card {
+    display: flex;
+    margin-bottom: 2em;
+    align-items: center;
+    background: white;
+    padding: 1em;
+    border-radius: 1em;
+    border: 2px solid black;
+    color: #222222;
+
+    & img {
+        max-height: 100px;
+        margin-right: 1em;
+        border-radius: 1em;
+    }
+    
+    &__title {
+        text-decoration: underline;
+        font-style: italic;
+        margin-bottom: 0;
+    }
+    
+    &__desc {
+        font-size: 1.2em;
+    }
+}
